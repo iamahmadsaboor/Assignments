@@ -17,7 +17,6 @@ function App() {
     <div className="full_screen">
       <div className="main">
         <button className="counter">{counter}</button>
-
         <div className="allBtn">
           <Button Function={increment} title="Increase it By 1" />
           <Button Function={decrement} title="Decrease it By 1" />
