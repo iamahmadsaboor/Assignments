@@ -27,14 +27,16 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="w-full text-white bg-gradient-to-b from-black to-gray-800 md:h-screen"
+      className="w-full text-white bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 md:h-screen"
     >
       <div className="flex flex-col justify-center w-full  max-w-screen-lg p-4 mx-auto">
         <div className="pb-8 pt-[4em] md:pt-[0em]">
           <p className="inline text-4xl font-bold border-b-4 border-gray-500">
-            Portfolio
+            React Landing Pages
           </p>
-          <p className="py-6">Some Website Created In React and tailwind css</p>
+          <p className="py-6">
+            Demo To Visit The Website & code to visit the website
+          </p>
         </div>
         <div className="grid gap-8 px-2 sm:grid-cols-2 md:grid-cols-3 md:px-12">
           {portfolios.map(({ id, src, href, GitHubLink }) => (
