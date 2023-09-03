@@ -2,6 +2,7 @@ import React from "react";
 import FastFoodD from "../portfolio/FastFoodD.png";
 import myPortfolio from "../portfolio/myPortfolio.png";
 import MetaProjectD from "../portfolio/MetaProjectD.png";
+import RealEstateD from "../portfolio/RealEstateD.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -22,6 +23,13 @@ const Portfolio = () => {
       src: myPortfolio,
       href: "https://iamahmadsaboor.vercel.app/",
       GitHubLink: "https://github.com/iamahmadsaboor",
+    },
+    {
+      id: 4,
+      src: RealEstateD,
+      href: "https://upset-seashore.surge.sh",
+      GitHubLink:
+        "https://github.com/iamahmadsaboor/Real-Estate-Design/tree/main/real-estate-in-react",
     },
   ];
   return (
@@ -54,7 +62,7 @@ const Portfolio = () => {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:text-xl"
                 >
                   Demo
                 </a>
@@ -62,7 +70,7 @@ const Portfolio = () => {
                   href={GitHubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:text-xl"
                 >
                   Code
                 </a>
