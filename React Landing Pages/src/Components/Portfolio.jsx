@@ -40,10 +40,10 @@ const Portfolio = () => {
       <div className="flex flex-col justify-center w-full  max-w-screen-lg p-4 mx-auto">
         <div className="pb-8 pt-[4em] md:pt-[0em]">
           <p className="inline text-4xl font-bold border-b-4 border-gray-500">
-            React Landing Pages
+            React Pages
           </p>
           <p className="py-6">
-            Demo To Visit The Website & code to visit the website
+            Demo To Visit The Website & code to visit the github
           </p>
         </div>
         <div className="grid gap-8 px-2 sm:grid-cols-2 md:grid-cols-3 md:px-12">
