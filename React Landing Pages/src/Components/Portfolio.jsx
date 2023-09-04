@@ -3,6 +3,7 @@ import FastFoodD from "../portfolio/FastFoodD.png";
 import myPortfolio from "../portfolio/myPortfolio.png";
 import MetaProjectD from "../portfolio/MetaProjectD.png";
 import RealEstateD from "../portfolio/RealEstateD.png";
+import XploreSkillD from "../portfolio/XploreSkillD.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -27,6 +28,13 @@ const Portfolio = () => {
     {
       id: 4,
       src: RealEstateD,
+      href: "https://upset-seashore.surge.sh",
+      GitHubLink:
+        "https://github.com/iamahmadsaboor/Real-Estate-Design/tree/main/real-estate-in-react",
+    },
+    {
+      id: 5,
+      src: XploreSkillD,
       href: "https://upset-seashore.surge.sh",
       GitHubLink:
         "https://github.com/iamahmadsaboor/Real-Estate-Design/tree/main/real-estate-in-react",
