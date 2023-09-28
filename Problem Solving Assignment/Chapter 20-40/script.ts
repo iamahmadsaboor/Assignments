@@ -173,9 +173,22 @@ function strToFloat(str: any): number | undefined {
 strToFloat("10");
 // 4.How can you check if a string can be successfully converted to an integer or decimal in JavaScript before performing the conversion?
 
-
 // 5.How can you convert a number to a string in JavaScript?
+const numberValue: number = 42;
+const stringValue: string = numberValue.toString();
 
 // 6.Write a JavaScript function to convert the number 42 to a string.
-        
+function numberToString(): string {
+  const numberValue: number = 42;
+  return numberValue.toString();
+}
+
+const result: string = numberToString();
+console.log(result);
+
 // 7.Can you convert a string representing a decimal number (e.g., "3.14") to an integer in JavaScript? If so, how?
+
+const decimalString: string = "3.14";
+const integerValue: number = parseInt(decimalString);
+
+console.log(integerValue);
