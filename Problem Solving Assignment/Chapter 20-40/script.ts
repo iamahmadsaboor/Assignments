@@ -302,3 +302,147 @@ let birthDateObject: Date = new Date(
   birthMinute,
   birthSecond
 );
+
+// Chapter35 - 37(Functions);
+// 1.Code the first line of a function displayAlert.
+function displayAlert() {
+  console.log("Hello");
+}
+
+// 2.Code a function named askName that prompts the user to "Enter name" and assigns the answer to
+// userName, which hasn't been declared beforehand.
+// function askName() {
+//   let userName33: string = prompt("Enter Name");
+//   console.log(userName33);
+// }
+// 3.Code a function that calls 2 other functions.
+
+function callBoth() {
+  displayAlert();
+  // askName1();
+}
+// 4.Code a function that displays a prompt, "Enter name" and then displays the name in an alert. Call the function.
+// function askName1() {
+//   let userName33: string = prompt("Enter Name");
+//   alert(userName33);
+// }
+
+// 5.Code the first line of a function named concat that has 3 parameters, the first three letters of the alphabet.Call that takes a variable, a string, and a number as arguments.
+function concat(a: string, b: string, c: number) {
+  console.log(a + b + c);
+}
+
+// 6.Code a function that has 2 parameters. Concatenate them and assign the result to a variable that hasn't been declared beforehand.
+function concat1(a: string, b: string) {
+  let c: string = a + b;
+  console.log(c);
+}
+
+// 7.Code a function that has three parameters. Multiply them and assign them to a variable that hasn't been declared yet.
+function multiply(a: number, b: number, c: number) {
+  let d: number = a * b * c;
+  console.log(d);
+}
+// 8.Write a JavaScript function that takes an array of numbers as input and returns the average of those numbers.
+function average(arr: number[]): number {
+  let sum: number = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+
+  return sum / arr.length;
+}
+// 9.Write a JavaScript function that takes two parameters and returns their sum.
+function sum(a: number, b: number): number {
+  return a + b;
+}
+// 10.Write a JavaScript function that takes an array of numbers as input and returns the average of those numbers.
+function average1(arr: number[]): number {
+  let sum: number = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+
+  return sum / arr.length;
+}
+// 11.You have to capture the returned value from a function and store it in a variable?
+const avg: number = average1([1, 2, 3, 4, 5]);
+console.log(avg);
+
+// 12.Write a function which tells letter counts of (word).
+function letterCount(word: string): number {
+  return word.length;
+}
+// 13.Write a function to set (year) in date object.
+function setYear(year: number): Date {
+  let d: Date = new Date();
+  d.setFullYear(year);
+  return d;
+}
+// 14.Write a function which tells the age of a person who Born on (dateOfBirth)
+function age(dateOfBirth: Date): number {
+  let d: Date = new Date();
+  let diff: number = d.getTime() - dateOfBirth.getTime();
+  return diff / (1000 * 60 * 60 * 24 * 365);
+}
+// 15.Write a function which tells the presense of (word) in an array = ['zaid','haris','raza','abubakar','hassan','hussain','fatima']result should be in true or false
+function presence(word: string, arr: string[]): boolean {
+  for (let i = 0; i < arr.length; i++) {
+    if (word === arr[i]) {
+      return true;
+    }
+  }
+  return false;
+}
+// 16.Write a function which repeat (letter) 10 times.Hint: "abcde" str.repeat(10)
+function repeat(letter: string): string {
+  return letter.repeat(10);
+}
+// 17.write a function which reverse array = ['a','b','c','d','e']Hint: arr.reverse()
+function reverse(arr: string[]): string[] {
+  return arr.reverse();
+}
+// Chapter38 (Local vs.Global Variables)
+// 1.Write a JavaScript function that demonstrates the usage of a local variable.2.How can you access a global variable inside a function in JavaScript?
+let globalVariable: string = "Global Variable";
+function localVariable() {
+  let localVariable: string = "Local Variable";
+  console.log(localVariable);
+}
+localVariable();
+console.log(globalVariable);
+
+// 2.How can you access a global variable inside a function in JavaScript?
+let globalVariable1: string = "Global Variable";
+function globalVarFunc() {
+  console.log(globalVariable1);
+}
+globalVarFunc();
+
+// Chapter39, 40(Switch Statements)
+// 1.Write a JavaScript switch statement that checks the value of a variable and performs different actions basedon different cases.
+let variable: string = "Hello";
+switch (variable) {
+  case "Hello":
+    console.log("Hello");
+    break;
+  case "World":
+    console.log("World");
+    break;
+  default:
+    console.log("Default");
+}
+// 2.Write a JavaScript switch statement that check whether cityName given by user check the cityName if match alert the user and break the statement, if not default message will be shown to user
+let cityName1: string = "Karachi";
+switch (cityName1) {
+  case "Karachi":
+    console.log("Karachi");
+    break;
+  case "Lahore":
+    console.log("Lahore");
+    break;
+  default:
+    console.log("Default");
+}
+
+// ================= THE END =================
