@@ -192,3 +192,6 @@ const decimalString: string = "3.14";
 const integerValue: number = parseInt(decimalString);
 
 console.log(integerValue);
+
+// Chapter 30
+// 1.Code a statement that rounds a number represented by num to 4 places,  converts  it  toa  string,  and  assigns  it  to  newNum,  which hasn't been declared beforehand
