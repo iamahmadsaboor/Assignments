@@ -195,3 +195,110 @@ console.log(integerValue);
 
 // Chapter 30
 // 1.Code a statement that rounds a number represented by num to 4 places,  converts  it  toa  string,  and  assigns  it  to  newNum,  which hasn't been declared beforehand
+let num: number = 23.45678;
+let newNum: string = num.toFixed(4);
+console.log(newNum);
+
+//2 .In a single statement round a number represented by a variable to 2  places,  convert  it  to  a  string,  convert  it  back  to  a  number,  and assign it to the same variable.
+let num1: number = 23.45678;
+num1 = Number(num1.toFixed(2));
+console.log(num1);
+
+// 2Code  the  first  line  of  an  if  statement  that  tests  whether  the number  represented  by  num,  rounded  to  2  digits  and  converted to a string, has more than 4 characters in it.
+let num2: number = 23.45678;
+let num2String: string = num2.toFixed(2).toString();
+if (num2String.length > 4) {
+  console.log("Yes");
+}
+
+// 4.Assign a number with many decimal places to a variable.Code  an  alert  that  displays  the  number  rounded  to  2  decimal places and converted to a string.
+let num3: number = 23.45678;
+let num3String: string = num3.toFixed(2).toString();
+console.log(num3String);
+
+// Chapter 31 -34 Date
+// 1.Code a statement that creates a new Date object and assigns it to dObj, which hasn't been declared beforehand.
+let dObj: Date = new Date();
+console.log(dObj);
+
+// 2.Code astatement that creates a new Date object, converts it to a string, and assigns the string to dStr, which hasn't been declared beforehand
+let dObj1: Date = new Date();
+let dStr: string = dObj1.toString();
+console.log(dStr);
+
+// 3.Code a statement that extracts the day of the week from a Date object represented by d and assigns it to day, which hasn't been declared beforehand.
+let d: Date = new Date();
+let day: number = d.getDay();
+console.log(day);
+
+// 4.The day has been extracted from the Date object and assigned to d. The names of the days of the week have been assigned to the array dayNames. Alert the current day with array index.
+let dayNames: string[] = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let day1: number = d.getDay();
+console.log(dayNames[day1]);
+// 5.Extract all parts of theDateand Time and assign it to the variable whichhas not beendeclared beforehand.
+let d1: Date = new Date();
+let year: number = d1.getFullYear();
+let month: number = d1.getMonth();
+let date: number = d1.getDate();
+let day2: number = d1.getDay();
+let hour: number = d1.getHours();
+let minute: number = d1.getMinutes();
+let second1: number = d1.getSeconds();
+let millisecond: number = d1.getMilliseconds();
+let time: number = d1.getTime();
+// 6.Code a statement that creates a Date object for the last day of the last month of 2020 and assigns it to later, which hasn't been declared beforehand.
+let later: Date = new Date(2020, 11, 31);
+console.log(later);
+
+// 7.Create a Date object for the second day of the second month of 1992 and assign it to a variable that hasn't been declared beforehand
+let secondDay: Date = new Date(1992, 1, 2);
+console.log(secondDay);
+
+// 8.Code a single statement that displays in an alert the milliseconds that elapsed between the reference date and the beginning of 1980.
+let d2: Date = new Date(1980, 1, 1);
+let d3: Date = new Date();
+let diff: number = d3.getTime() - d2.getTime();
+console.log(diff);
+
+// 9.How do you change the year of a date in JavaScript?
+let d4: Date = new Date();
+d4.setFullYear(2020);
+console.log(d4);
+// 10.Write a JavaScript function to change the month of a given date to January.
+let d5: Date = new Date();
+d5.setMonth(0);
+console.log(d5);
+// 11.What is the method to change the day of the week for a specific date in JavaScript?
+let d6: Date = new Date();
+d6.setDate(1);
+console.log(d6);
+// 12.Write a JavaScript function to change the minutes of a given time to a specific value. (Value by prompt)
+let d7: Date = new Date();
+d7.setMinutes(1);
+console.log(d7);
+
+// 13.Write a JavaScript function to add a specific number of hours to a given time.
+let d8: Date = new Date();
+d8.setHours(1);
+console.log(d8);
+
+// 14.You have to createa age calculator in JavaScript
+let d9: Date = new Date();
+let birthYear: number = 1992;
+let birthMonth: number = 1;
+let birthDate: number = 2;
+let birthDay: number = 1;
+let birthHour: number = 1;
+let birthMinute: number = 1;
+let birthSecond: number = 1;
+let birthMillisecond1: number = 1;
+let birthTime: number = 1;
+let birthDateObject: Date = new Date(
+  birthYear,
+  birthMonth,
+  birthDate,
+  birthDay,
+  birthHour,
+  birthMinute,
+  birthSecond
+);
